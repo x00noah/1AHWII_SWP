@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+    <head>
+        <title>Abstrakte Kunst</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <h1>Abstrakte Kunst</h1>
+        <canvas id="scene" width="500" height="500" style="border: 1px dashed black"></canvas>
+        <script>
+/** @type {CanvasRenderingContext2D} */     
+let ctx = scene.getContext("2d")
+
+ctx.fillStyle = "ChartReuse"
+ctx.fillRect(60, 10, 380, 50)
+ctx.fillRect(60, 440, 380, 50)
+
+ctx.fillStyle = "Brown"
+ctx.fillRect(440, 60, 50, 380)
+ctx.fillRect(10, 60, 50, 380)
+
+ctx.strokeStyle = "DarkOrange"
+ctx.arc(250, 250, 190, 0, 50)
+ctx.lineWidth = 50
+ctx.stroke()
+
+
+         </script>
+    </body>
+</html>
